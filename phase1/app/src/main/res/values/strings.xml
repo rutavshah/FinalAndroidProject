@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Game</string>
+    <string name="total_score">Total Score</string>
+    <string name="level1">Level1</string>
+    <string name="level2">level2</string>
+    <string name="Level2">Level2</string>
+    <string name="Level3">Level3</string>
+</resources>

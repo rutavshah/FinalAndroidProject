@@ -1,0 +1,105 @@
+Committing errors in the beginning:
+Step1
+Created a folder hierarchy to organize the 3 games and a main activity
+
+Step 2
+Added features to memory game. This is explained more in the members section
+
+Step 3
+Deleted corrupted files which were created by accidentally merging two games. The two games are safe
+and backed up elsewhere
+
+Step 4
+Created game files for game1. More explained in member section below.
+
+Step 5
+Created a main home with buttons that connect to three games
+
+Step 6
+Created a stats page.
+
+Step 7
+Updated main activity to connect to game1 and the stats page
+
+
+
+Started committing the files and added README.txt for keeping the track
+#############
+Step 1: Sargunan Gurumurthy
+Commit made: Created the main Activity class and added the background and buttons.
+
+Step 2
+Member: Uttkarsh Berwal
+Commit made: Added the README file. Connecting the MainActivity with Level1(Activity), Created
+classes MainThread and Level1view to create the canvas for game1(Level1).
+
+Step 3
+Member: Aditya Goyal
+Commit made: Added the barrier.java, Button.java, ChildBall.java, GameManager.java - These classes
+makes the object entities required in the first game. Also, connected the whole Level1 game
+
+Step 4
+Member: Uttkarsh Berwal
+Commit made: Added GameStats(activity) to keep the record of the score of the games.
+
+Step 5
+Member 1: Sargunan
+Changes made: Created Ball.java, Level2.java, GameView.java. This handles front end for
+level1. Added some game logic in GameView which will be refactored into a manager class.
+Connected MainActiity to Level3.
+Member 2: Zohaib Rehman
+Commit made: Added Ball.java, Level3.java, GameView.java which were created previously. Created and
+added MainThread. Created and added GameManager.java to handle all backend logic for the game.
+Code previously handling game-logic in GameView has been refactored into the GameManager.java.
+
+Step 6
+Member 1: Uttkarsh Berwal
+Changes made: made a datapath to connect Level1 final score to be accessible in MainActivity and
+GameStats. added game 1 score and total score to displayed on the game stats page. The scores are
+accessed and modified using saveData() and loadData()
+Member 2: Zohaib Rehman
+Commit made: using SharedPreferences, created two methods loadData() and saveData() to be able to
+save any score for any game. made these methods such that it is extensible when more games are added
+or when user account system is implemented.
+
+Step 7
+Member: Zohaib Rehman
+Commit made: added game 3 to be displayed in stats page and will now be used to calculate the total
+score. GameManager.java draw method for game2 now also dynamically changes message to
+show what is to be done next.
+
+Step 8
+Member: Sargunan Gurumurthy
+Commit made: added login page, created buttons and linked them to Main activity. Also made the
+transition from mainActivity to second main activity.
+
+Step 9
+Member: Rutav Shah
+Commit made: added code for , added Ball.java, Level2.java, Level2view.java, Line.java and
+MainThread.java under the level2 package. Connected the game to the main screen.
+
+Step 10
+Member: Sargunan Gurumurthy
+Commit made: added customisation page, created buttons and linked them to Main activity. Also passed
+data from the customisation page to level 3 and corrected the code correspondingly.
+
+Step 11
+Member: Zohaib Rehman, Uttkarsh Berwal
+Commit made: Added a register account functionality. Log in now only works if user has first
+registered his/her account. If log in has wrong credentials then a toast message is displayed.
+
+Step 12
+Member: Uttkarsh Berwal, Zohaib Rehman
+Commit made: Added customization page for game 1.
+
+Step 13
+Member1: Rutav Shah
+Commit made: Made methods in Level2View class to make the code cleaner, implemented randomization
+code from
+Member 2
+Member2: Tony Liu
+Commit made: Tony: made randomization code for the lines
+
+Step 14
+Member: Rutav Shah
+Commit made: fixed coordinates for random lines between two balls

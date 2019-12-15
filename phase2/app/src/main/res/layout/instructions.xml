@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:backgroundTint="#EA80FC"
+        android:onClick="mode1Game"
+        android:text="Mode 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="104dp"
+        android:layout_weight="1"
+        android:backgroundTint="#EA80FC"
+        android:onClick="mode3Game"
+        android:text="Mode 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/instructions3"
+        android:layout_width="366dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+
+        android:text="Click the button on the left side that matches the selected one on the right side, this game will test you on your accuracy, you must get 60% success rate after the set number of rounds"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="92dp"
+        android:layout_weight="1"
+        android:backgroundTint="#EA80FC"
+        android:onClick="mode2Game"
+        android:text="Mode 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/instructions2"
+        android:layout_width="366dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:text="Reverse mode, Press all the balls that DO NOT match with the yellow ball on the right, you have limited number of lives and you must get a score of 15!"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/instructions1"
+        android:layout_width="366dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:text="Normal mode, press the ball on the left that matches with the yellow ball on the right. You have limited number of lives and need to get a score of 7!"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:checked="false"
+        android:layout_width="366dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="80dp"
+        android:text="HARD MODE"
+        android:textOn="HARD"
+        android:textOff= "EASY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
